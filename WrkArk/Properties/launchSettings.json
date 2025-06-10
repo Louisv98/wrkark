@@ -4,7 +4,7 @@
     "Electron.NET App": {
       "commandName": "Executable",
       "executablePath": "electronize",
-      "commandLineArgs": "start --use-gl=egl",
+      "commandLineArgs": "start /watch --use-gl=egl",
       "workingDirectory": ".",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

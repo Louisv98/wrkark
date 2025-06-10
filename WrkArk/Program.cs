@@ -1,6 +1,9 @@
 using WrkArk.Components;
 using ElectronNET.API;
 using ElectronNET.API.Entities;
+using Blazorise;
+using Blazorise.Icons.FontAwesome;
+using Blazorise.Tailwind;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.UseElectron(args);
@@ -9,6 +12,9 @@ builder.WebHost.UseElectron(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddElectron();
+builder.Services.AddBlazorise()
+    .AddTailwindProviders()
+    .AddFontAwesomeIcons();
 
 if (HybridSupport.IsElectronActive)
 {
