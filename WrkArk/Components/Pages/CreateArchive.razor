@@ -1,0 +1,17 @@
+@page "/CreateArchive"
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<PageTitle>Create Archive</PageTitle>
+
+<div class="flex flex-row justify-between">
+    <AppHeader Text="Create Archive"></AppHeader>
+    <AppButton Text="Back" OnClickCallback="NavigateBack"></AppButton>
+</div>
+
+@code {
+    public void NavigateBack()
+    {
+        Navigation.NavigateTo("/");
+    }
+}

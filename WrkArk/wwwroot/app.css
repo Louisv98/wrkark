@@ -1,6 +1,13 @@
 #content {
     clear: both;
     position: relative;
-    margin: auto;
+    margin: 10px;
     height: 100vh;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

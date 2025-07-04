@@ -15,6 +15,7 @@ builder.Services.AddElectron();
 builder.Services.AddBlazorise()
     .AddTailwindProviders()
     .AddFontAwesomeIcons();
+builder.Services.AddRazorPages();
 
 if (HybridSupport.IsElectronActive)
 {
@@ -42,6 +43,7 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<WrkArk.Components.App>()
     .AddInteractiveServerRenderMode();
+app.MapRazorPages();
 
 app.Run();
 
